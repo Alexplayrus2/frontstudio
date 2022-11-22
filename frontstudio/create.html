@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>frontstudio - editor</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="editor.js"></script>
+
+</head>
+
+<body>
+  <h1 style="text-align: center;" id="loading">Please wait, we are getting tools ready!</h1>
+  <textarea id="myTextarea"></textarea>
+<script src="toolsetup.js"></script>
+  <textarea id="exportbox" placeholder="your exported html will go here"></textarea>
+  <button onclick="exporthtml()">Export Html</button>
+  <input id="customelement" value="button" placeholder="the elements class, e.g button"></input>
+  <input id="cstelementid" value="button1" placeholder="the elements id, this can be used in javascript code"></input>
+  <button onclick="createelement()">Add element</button>
+  <p></p>
+  <textarea id="javascript" placeholder="Put your javascript here." value="console.log('made using fronstudio');"></textarea>
+  <p></p>
+  <input id="color" placeholder="color" value="#000000
+"> </input>
+  <input id="bgcolor" placeholder="background color" value="#ffffff"> </input>
+
+</body>
+
+</html>
